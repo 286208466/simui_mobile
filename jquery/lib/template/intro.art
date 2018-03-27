@@ -1,0 +1,7 @@
+<div class="detailWrap">
+	<h2>说明</h2>
+	<div class="tipbox">
+		<p>如果您不喜欢以<code>sim-</code>开头命名的样式，可以自己修改<code>/src/less/components/vars.less</code>中的<code>@pre</code>,然后运行<code>webpack</code>重新编译即可。</p>
+	</div>
+</div>
+

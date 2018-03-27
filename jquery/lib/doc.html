@@ -38,8 +38,9 @@
 					<li>
 						<h3><a>开始使用</a></h3>
 						<ul>
-							<li><a class="menu-item">安装</a></li>
-							<li><a class="menu-item">快速上手</a></li>
+							<li><a class="menu-item" href="#/install">安装</a></li>
+							<li><a class="menu-item" href="#/intro">说明</a></li>
+							<li><a class="menu-item" href="#/standard">层级规范</a></li>
 						</ul>
 					</li>
 					<li>
@@ -76,17 +77,11 @@
 							<li><a class="menu-item">搜索 search</a></li>
 						</ul>
 					</li>
-					<li>
-						<h3><a>层级规范</a></h3>
-						<ul>
-							<li><a class="menu-item">层级规范</a></li>
-						</ul>
-					</li>
 				</ul>
 			</div>
 		</div>
 		<div id="contentWrap">
-		
+			<div class="clearfix"></div>
 		</div>
 	</div>
 	
@@ -95,11 +90,39 @@
 	</div>
 
 <script src="./jquery.min.js"></script>
+<script src="./template.js"></script>
 <script>
+
+init();
+
+function init(){
+	var hash = location.hash;
+	if(hash !="" && hash != "#/"){
+		hash = hash.split("/")[1];
+	}else{
+		hash = "install";
+	}
+	render(hash);
+}
+
 $(window).on('hashchange', function () {
-    var hash = location.hash;
-    alert(hash)
+	init();
 });
+
+function render(hash){
+	
+	if(!!template[hash]){
+		$("#contentWrap>div").html(template[hash]);
+		$(".menu-item.cur").removeClass("cur");
+		$(".menu-item[href='#/" + hash + "']").addClass("cur");
+	}else{
+		$("#contentWrap>div").html(template["install"]);
+		$(".menu-item.cur").removeClass("cur");
+		$(".menu-item[href='#/install']").addClass("cur");
+	}
+	
+}
+
 </script>
 </body>
 </html>

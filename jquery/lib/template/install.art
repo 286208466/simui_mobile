@@ -1,0 +1,36 @@
+<div class="detailWrap">
+
+	<h2>安装</h2>
+	<h3>下载</h3>
+	<p>请在本页按F12打开控制台，然后下载即可</p>
+	<h3>引入静态资源</h3>
+	<p>目前可以通过github获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。</p>
+
+<pre>
+<code class="codebox"><span><i><<i>!-- 引入样式 --></span>
+<span><i><</i>link rel="stylesheet" href="sim_mobile.css"></span>
+<span><i><<i>!-- 引入组件库 --></span>
+<span><i><</i>script src="sim_mobile.js"></script></span></code>
+</pre>
+
+	<h3>完整的页面示例</h3>
+<pre>
+<code class="codebox"><span><i><</i>!DOCTYPE html></span>
+<span><i><</i>html lang="en"></span>
+<span><i><</i>head></span>
+<span><i><</i>meta charset="UTF-8" /></span>
+<span><i><</i>meta name="apple-mobile-web-app-capable" content="yes" /></span>
+<span><i><</i>meta name="apple-mobile-web-app-status-bar-style" content="black" /></span>
+<span><i><</i>meta name="format-detection" content="telephone=no" /></span>
+<span><i><</i>meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /></span>
+<span><i><</i>title></title></span>
+<span><i><</i>link rel="stylesheet" href="sim_mobile.css"></span>
+<span><i><</i>/head></span>
+<span><i><</i>body></span><br>
+<span><i><</i>script src="sim_mobile.js"></script></span>
+<span><i><</i>/body></span>
+<span><i><</i>/html></span></code>
+</pre>
+
+</div>
+

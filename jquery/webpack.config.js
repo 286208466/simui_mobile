@@ -12,11 +12,12 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
 	entry: {
-		'sim_mobile': './src/js/sim_mobile.js'
-		,'sim_mobile': ['./src/less/sim_mobile.less']
+		'dist/sim_mobile': './src/js/sim_mobile.js'
+		,'dist/sim_mobile': ['./src/less/sim_mobile.less']
+		,'lib/template': './lib/template/template.js'
 	}
 	,output: {
-		path: __dirname + '/dist',
+		path: __dirname,
 		filename: '[name].js'
 	}
 	,module: {
@@ -42,6 +43,16 @@ module.exports = {
 	                }
 	              }
 	            ]
+	        }
+	        ,{
+	            test: /\.art$/,
+	            loader: "art-template-loader",
+	            options: {
+	            	htmlResourceRules: false,
+	            	escape: false
+	                // art-template options (if necessary)
+	                // @see https://github.com/aui/art-template
+	            }
 	        }
         ]
 	}

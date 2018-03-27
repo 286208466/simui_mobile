@@ -1,0 +1,34 @@
+body {
+	background: #F1F2F6;
+	padding-top: 69px;
+}
+::-webkit-scrollbar {
+	background: #f9f9f9;
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: hsla(220,4%,58%,.3);
+}
+::-webkit-scrollbar-button{
+	height: 0;
+}
+#statusbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 25px;
+	background: #fff;
+	z-index: 1000;
+}
+#header {
+	background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 25px;
+    color: #3c3c3c;
+    z-index: 1000;
+}
+#header p {
+	text-align: center;
+	line-height: 44px;
+}
