@@ -1,0 +1,92 @@
+body {
+	color: #5e6d82;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+.clearfix {
+    *zoom:1;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+#header {
+	background: linear-gradient(to right, #347eff, #1ea3ff);
+	position: fixed;
+	color: #fff;
+	padding: 10px;
+	width: 100%;
+}
+#header h2 {
+	display: inline-block;
+	font-size: 20px;
+}
+#header em {
+	font-size: 12px;
+}
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #f7fbfd;	
+}
+#footer p {
+	font-size: 12px;
+	line-height: 40px;
+	text-align: center;	
+}
+#mainWrap {
+	position: absolute;
+	top: 52px;
+	bottom: 40px;
+	width: 100%;
+}
+#mainWrap>div {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+#menuWrap {
+	width: 230px;
+	background: #f9fafb;
+	
+}
+#menuWrap>div {
+	left: 0;
+	right: -17px;
+	position: absolute;
+	height: 100%;
+	overflow-y: auto;
+}
+#menuWrap>div>ul {
+	padding: 18px 0 20px 20px;
+}
+#menuWrap a {
+	display: block;
+	height: 40px;
+	color: #444;
+	line-height: 40px;
+	font-size: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: bold;
+}
+
+#menuWrap .menu-item {
+	font-weight: normal;
+	font-size: 14px;
+}
+#menuWrap .menu-item.cur, #menuWrap .menu-item:hover {
+    color: #409eff;
+}
