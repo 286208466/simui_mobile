@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+body > p {
+	margin: 10px;
+}
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>列表 List</p>
+	</div>
+	
+	<br>
+	<div class="sim-cells_title">带说明的列表项</div>
+	<div class="sim-cells">
+           <div class="sim-cell">
+               <div class="sim-cell_bd">
+                   <p>标题文字</p>
+               </div>
+               <div class="sim-cell_ft">说明文字</div>
+           </div>
+           <div class="sim-cell sim-cell_swiped">
+               <div class="sim-cell_bd" style="transform: translateX(-68px)">
+                   <div class="sim-cell">
+                       <div class="sim-cell_bd">
+                           <p>标题文字</p>
+                       </div>
+                       <div class="sim-cell_ft">说明文字</div>
+                   </div>
+               </div>
+               <div class="sim-cell_ft">
+                   <a class="sim-swiped-btn sim-swiped-btn_warning">删除</a>
+               </div>
+           </div>
+       </div>
+	
+	<br>
+	<div class="sim-cells_title">带图标、说明的列表项</div>
+	<div class="sim-cells">
+        <div class="sim-cell">
+            <div class="sim-cell_hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="sim-cell_bd">
+                <p>标题文字</p>
+            </div>
+            <div class="sim-cell_ft">说明文字</div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="sim-cell_bd">
+                <p>标题文字</p>
+            </div>
+            <div class="sim-cell_ft">说明文字</div>
+        </div>
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">带跳转的列表项</div>
+    <div class="sim-cells">
+        <a class="sim-cell sim-cell_access" href="javascript:;">
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">
+            </div>
+        </a>
+        <a class="sim-cell sim-cell_access" href="javascript:;">
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">
+            </div>
+        </a>
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">带说明、跳转的列表项</div>
+    <div class="sim-cells">
+        <a class="sim-cell sim-cell_access" href="javascript:;">
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">说明文字</div>
+        </a>
+        <a class="sim-cell sim-cell_access" href="javascript:;">
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">说明文字</div>
+        </a>
+
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">带图标、说明、跳转的列表项</div>
+    <div class="sim-cells">
+        <a class="sim-cell sim-cell_access" href="javascript:;">
+            <div class="sim-cell_hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">说明文字</div>
+        </a>
+        <a class="sim-cell sim-cell_access" href="javascript:;">
+            <div class="sim-cell_hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">说明文字</div>
+        </a>
+    </div>
+    <br>
+
+<script src="../lib/jquery.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
+

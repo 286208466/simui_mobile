@@ -1,0 +1,82 @@
+.@{pre}msg {
+  padding-top:36px;
+  text-align:center;
+}
+.@{pre}msg_icon {
+	margin-bottom:30px;
+}
+.@{pre}msg_text {
+  margin-bottom:25px;
+  padding:0 20px;
+}
+.@{pre}msg_text a{
+  color:#586C94;
+}
+.@{pre}msg_title {
+  margin-bottom:5px;
+  font-weight:400;
+  font-size:20px;
+}
+.@{pre}msg_desc {
+  font-size:14px;
+  color:#808080;
+}
+.@{pre}msg .@{pre}btn {
+	margin: 15px 20px;
+}
+/*
+	模拟页面
+*/
+.@{pre}page {
+	position: fixed;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* display: none; */
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	z-index: 2;
+}
+.@{pre}page.@{pre}current {
+	-webkit-transform: none;
+	transform: none;
+}
+.@{pre}page .@{pre}page_header {
+	height: 44px;
+	line-height: 44px;
+	padding: 0 10px;
+	background: #fff;
+	font-size: 16px;
+}
+.@{pre}page .@{pre}page_header p {
+	text-align: center;
+}
+.@{pre}page .@{pre}page_header::after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 1px;
+	border-top: 1px solid #d9d9d9;
+	color: #d9d9d9;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	z-index: 2;
+}
+.@{pre}page .@{pre}page_content{
+	overflow-y: auto;
+	position: absolute;
+	left: 0;
+	top: 44px;
+	right: 0;
+	bottom: 0;
+	background: #F1F2F6;
+}

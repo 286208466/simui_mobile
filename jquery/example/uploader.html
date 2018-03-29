@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+.sim-cell .sim-icon_warning{display: block}
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>上传 Uploader</p>
+	</div>
+	
+	<br>
+	<div class="sim-cells">
+		<div class="sim-cell">
+			<div class="sim-cell_bd">
+				<div class="sim-flex">
+					<div class="sim-flex_item">图片上传</div>
+					<div>0/2</div>
+				</div>
+				<div class="sim-uploader_files">
+					<ul id="uploaderFiles">
+						<li class="sim-uploader_file"></li>
+						<li class="sim-uploader_file"></li>
+						<li class="sim-uploader_file"></li>
+						<li class="sim-uploader_file">
+							<div class="sim-uploader_tip">
+                                <i class="sim-icon_warning"></i>
+                            </div>
+						</li>
+						<li class="sim-uploader_file">
+							<div class="sim-uploader_tip">
+                                50%
+                            </div>
+						</li>
+					</ul>
+					<div class="sim-uploader">
+						<input id="uploaderInput" type="file" accept="image/*" multiple="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sim-gallery" id="gallery" style="display: none;">
+        <span class="sim-gallery_img" id="galleryImg" style="background-image:url(./pic_160.png)"></span>
+        <div class="sim-gallery_op">
+            <a>
+            	  删除  
+            </a>
+        </div>
+    </div>
+
+<script src="../lib/jquery.min.js"></script>
+<script>
+
+$(function(){
+    var tmpl = '<li class="sim-uploader_file" style="background-image:url(#url#)"></li>',
+        $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
+        $uploaderInput = $("#uploaderInput"),
+        $uploaderFiles = $("#uploaderFiles")
+        ;
+
+    $uploaderInput.on("change", function(e){
+        var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+        for (var i = 0, len = files.length; i < len; ++i) {
+            var file = files[i];
+
+            if (url) {
+                src = url.createObjectURL(file);
+            } else {
+                src = e.target.result;
+            }
+
+            $uploaderFiles.append($(tmpl.replace('#url#', src)));
+        }
+    });
+    $uploaderFiles.on("click", "li", function(){
+        $galleryImg.attr("style", this.getAttribute("style"));
+        $gallery.fadeIn(200);
+    });
+    $gallery.on("click", function(){
+        $gallery.fadeOut(200);
+    });
+});
+</script>
+</body>
+</html>
+

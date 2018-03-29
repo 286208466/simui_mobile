@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+body>p{margin: 10px;}
+.sim-tabbar_icon {background: #fff;}
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>Tabbar</p>
+	</div>
+	
+	
+	<div class="sim-tab">
+        <div class="sim-tab_panel">
+
+        </div>
+        <div class="sim-tabbar">
+            <a class="sim-tabbar_item sim-on">
+                <span class="sim-tabbar_icon">
+                	<span class="sim-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+                </span>
+                <span class="sim-tabbar_label">微信</span>
+            </a>
+            <a class="sim-tabbar_item">
+                <span class="sim-tabbar_icon"></span>
+                <span class="sim-tabbar_label">通讯录</span>
+            </a>
+            <a class="sim-tabbar_item">
+                <span class="sim-tabbar_icon">
+                	<span class="sim-badge sim-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+                </span>
+                <span class="sim-tabbar_label">发现</span>
+            </a>
+            <a class="sim-tabbar_item">
+                <span class="sim-tabbar_icon"></span>
+                <span class="sim-tabbar_label">我</span>
+            </a>
+        </div>
+    </div>
+	
+<script src="../lib/jquery.min.js"></script>
+<script>
+$(function(){
+    $('.sim-tabbar_item').on('click', function () {
+        $(this).addClass('sim-on').siblings('.sim-on').removeClass('sim-on');
+    });
+});
+
+
+</script>
+</body>
+</html>
+

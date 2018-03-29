@@ -2,7 +2,7 @@ body {
 	background: #F1F2F6;
 	padding-top: 69px;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	background: #f9f9f9;
 	width: 5px;
 }
@@ -11,7 +11,7 @@ body {
 }
 ::-webkit-scrollbar-button{
 	height: 0;
-}
+} */
 #statusbar {
 	position: fixed;
 	top: 0;
@@ -26,7 +26,7 @@ body {
     width: 100%;
     top: 25px;
     color: #3c3c3c;
-    z-index: 1000;
+    z-index: 1;
 }
 #header p {
 	text-align: center;

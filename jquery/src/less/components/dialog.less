@@ -1,0 +1,147 @@
+.@{pre}dialog{
+  position:fixed;
+  z-index:5000;
+  width:80%;
+  max-width:300px;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+  background-color:#FFFFFF;
+  text-align:center;
+  border-radius:3px;
+  overflow:hidden;
+}
+.@{pre}dialog_hd{
+  padding:1.3em 1.6em 0.5em;
+}
+.@{pre}dialog_title{
+  font-weight:400;
+  font-size:18px;
+}
+.@{pre}dialog_bd{
+  padding:0 1.6em 0.8em;
+  min-height:40px;
+  font-size:15px;
+  line-height:1.3;
+  word-wrap:break-word;
+  word-break:break-all;
+  color:#808080;
+}
+.@{pre}dialog_bd:first-child{
+  padding:2.7em 20px 1.7em;
+  color:#353535;
+}
+.@{pre}dialog_ft{
+  position:relative;
+  line-height:40px;
+  font-size:16px;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+}
+.@{pre}dialog_ft:after{
+  content:" ";
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  height:1px;
+  border-top:1px solid #D5D5D6;
+  color:#D5D5D6;
+  -webkit-transform-origin:0 0;
+          transform-origin:0 0;
+  -webkit-transform:scaleY(0.5);
+          transform:scaleY(0.5);
+}
+.@{pre}dialog_btn{
+  display:block;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+          flex:1;
+  color:#09BB07;
+  text-decoration:none;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  position:relative;
+}
+.@{pre}dialog_btn:active{
+  background-color:#EEEEEE;
+}
+.@{pre}dialog_btn:after{
+  content:" ";
+  position:absolute;
+  left:0;
+  top:0;
+  width:1px;
+  bottom:0;
+  border-left:1px solid #D5D5D6;
+  color:#D5D5D6;
+  -webkit-transform-origin:0 0;
+          transform-origin:0 0;
+  -webkit-transform:scaleX(0.5);
+          transform:scaleX(0.5);
+}
+.@{pre}dialog_btn:first-child:after{
+  display:none;
+}
+.@{pre}dialog_btn_default{
+  color:#353535;
+}
+.@{pre}dialog_btn_primary{
+  color:#09BB07;
+}
+.@{pre}skin_android .@{pre}dialog{
+  text-align:left;
+  box-shadow:0 6px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.@{pre}skin_android .@{pre}dialog_title{
+  font-size:21px;
+}
+.@{pre}skin_android .@{pre}dialog_hd{
+  text-align:left;
+}
+.@{pre}skin_android .@{pre}dialog_bd{
+  color:#808080;
+  padding:0.25em 1.6em 2em;
+  font-size:17px;
+  text-align:left;
+}
+.@{pre}skin_android .@{pre}dialog_bd:first-child{
+  padding:1.6em 1.6em 2em;
+  color:#353535;
+}
+.@{pre}skin_android .@{pre}dialog_ft{
+  display:block;
+  text-align:right;
+  line-height:42px;
+  font-size:16px;
+  padding:0 1.6em 0.7em;
+}
+.@{pre}skin_android .@{pre}dialog_ft:after{
+  display:none;
+}
+.@{pre}skin_android .@{pre}dialog_btn{
+  display:inline-block;
+  vertical-align:top;
+  padding:0 .8em;
+}
+.@{pre}skin_android .@{pre}dialog_btn:after{
+  display:none;
+}
+.@{pre}skin_android .@{pre}dialog_btn:active{
+  background-color:rgba(0, 0, 0, 0.06);
+}
+.@{pre}skin_android .@{pre}dialog_btn:visited{
+  background-color:rgba(0, 0, 0, 0.06);
+}
+.@{pre}skin_android .@{pre}dialog_btn:last-child{
+  margin-right:-0.8em;
+}
+.@{pre}skin_android .@{pre}dialog_btn_default{
+  color:#808080;
+}
+@media screen and (min-width: 1024px){
+  .@{pre}dialog{
+    width:35%;
+  }
+}

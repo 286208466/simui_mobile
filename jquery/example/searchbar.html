@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>Searchbar</p>
+	</div>
+	
+	<div class="sim-searchbar" id="searchBar">
+        <form class="sim-searchbar_form">
+            <div class="sim-searchbar_box">
+                <i class="sim-icon_search"></i>
+                <input type="search" class="sim-searchbar_input" id="searchInput" placeholder="搜索" required="">
+                <a class="sim-icon-clear" id="searchClear"></a>
+            </div>
+            <label class="sim-searchbar_label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                <i class="sim-icon_search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a class="sim-searchbar_cancel-btn" id="searchCancel">取消</a>
+    </div>
+    
+    <div class="sim-cells" id="searchResult" style="display: none;">
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <p>实时搜索文本</p>
+            </div>
+        </div>
+    </div>
+	
+	
+<script src="../lib/jquery.min.js"></script>
+<script>
+
+$(function(){
+    var $searchBar = $('#searchBar'),
+        $searchResult = $('#searchResult'),
+        $searchText = $('#searchText'),
+        $searchInput = $('#searchInput'),
+        $searchClear = $('#searchClear'),
+        $searchCancel = $('#searchCancel');
+
+    function hideSearchResult(){
+        $searchResult.hide();
+        $searchInput.val('');
+    }
+    function cancelSearch(){
+        hideSearchResult();
+        $searchBar.removeClass('sim-on');
+        $searchText.show();
+    }
+
+    $searchText.on('click', function(){
+        $searchBar.addClass('sim-on');
+        $searchInput.focus();
+    });
+    $searchInput
+        .on('blur', function () {
+            if(!this.value.length) cancelSearch();
+        })
+        .on('input', function(){
+            if(this.value.length) {
+                $searchResult.show();
+            } else {
+                $searchResult.hide();
+            }
+        })
+    ;
+    $searchClear.on('click', function(){
+        hideSearchResult();
+        $searchInput.focus();
+    });
+    $searchCancel.on('click', function(){
+        cancelSearch();
+        $searchInput.blur();
+    });
+});
+
+</script>
+</body>
+</html>
+

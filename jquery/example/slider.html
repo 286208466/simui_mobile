@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+body > p {
+	margin: 10px;
+}
+</style>
+</head>
+<body class="example" ontouchstart>
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>滑块 Slider</p>
+	</div>
+	
+	<br>
+	<div class="sim-slider">
+        <div class="sim-slider_inner">
+            <div style="width: 0;" class="sim-slider_track"></div>
+            <div style="left: 0;" class="sim-slider_handler"></div>
+        </div>
+    </div>
+	
+	<div class="sim-sliderbox">
+        <div class="sim-slider">
+            <div id="sliderInner" class="sim-slider_inner">
+                <div id="sliderTrack" style="width: 58%;" class="sim-slider_track"></div>
+                <div id="sliderHandler" style="left: 58%;" class="sim-slider_handler"></div>
+            </div>
+        </div>
+        <div id="sliderValue" class="sim-slider-box_value">58</div>
+    </div>
+
+<script src="../lib/zepto.min.js"></script>
+<script>
+
+$(function(){
+    var $sliderTrack = $('#sliderTrack'),
+        $sliderHandler = $('#sliderHandler'),
+        $sliderValue = $('#sliderValue');
+
+    var totalLen = $('#sliderInner').width(),
+        startLeft = 0,
+        startX = 0;
+
+    $sliderHandler
+        .on('touchstart', function (e) {
+            startLeft = parseInt($sliderHandler.css('left')) * totalLen / 100;
+            startX = e.changedTouches[0].clientX;
+        })
+        .on('touchmove', function(e){
+            var dist = startLeft + e.changedTouches[0].clientX - startX,
+                percent;
+            dist = dist < 0 ? 0 : dist > totalLen ? totalLen : dist;
+            percent =  parseInt(dist / totalLen * 100);
+            $sliderTrack.css('width', percent + '%');
+            $sliderHandler.css('left', percent + '%');
+            $sliderValue.text(percent);
+
+            e.preventDefault();
+        })
+    ;
+});
+</script>
+</body>
+</html>
+

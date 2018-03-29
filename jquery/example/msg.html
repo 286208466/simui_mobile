@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+body>p{margin: 10px;}
+.sim-page{
+    top: 25px;
+}
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>Msg</p>
+	</div>
+	
+	<br>
+	<p>
+		<a class="sim-btn sim-btn_success" id="showSuccessPage">成功提示页</a>
+	</p>
+	<p>
+		<a class="sim-btn sim-btn_success" id="showErrorPage">失败提示页</a>
+	</p>
+	
+	<div class="sim-page" id="successPage">
+		<div class="sim-page_header">
+			<p>成功提示页</p>
+		</div>
+		<div class="sim-page_content">
+			<div class="sim-msg">
+		        <div class="sim-msg_icon">
+		        	<i class="sim-icon_success"></i>
+		        </div>
+		        <div class="sim-msg_text">
+		            <h2 class="sim-msg_title">操作成功</h2>
+		            <p class="sim-msg_desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a>文字链接</a></p>
+		        </div>
+		        <div>
+		            <a class="sim-btn sim-btn_success">推荐操作</a>
+		            <a class="sim-btn sim-btn_default">辅助操作</a>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+
+	<div class="sim-page" id="errorPage">
+		<div class="sim-page_header">
+			<p>失败提示页</p>
+		</div>
+		<div class="sim-page_content">
+			<div class="sim-msg">
+		        <div class="sim-msg_icon">
+		        	<i class="sim-icon_error"></i>
+		        </div>
+		        <div class="sim-msg_text">
+		            <h2 class="sim-msg_title">操作失败</h2>
+		            <p class="sim-msg_desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a>文字链接</a></p>
+		        </div>
+		        <div>
+		            <a class="sim-btn sim-btn_success">推荐操作</a>
+		            <a class="sim-btn sim-btn_default">辅助操作</a>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	
+<script src="../lib/jquery.min.js"></script>
+<script>
+$("#showSuccessPage").on("click", function(){
+	$("#successPage").addClass("sim-current");
+})
+$("#showErrorPage").on("click", function(){
+	$("#errorPage").addClass("sim-current");
+})
+</script>
+</body>
+</html>
+

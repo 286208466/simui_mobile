@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+body>p{margin: 10px;}
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>Progress</p>
+	</div>
+	
+	<br>
+	
+	<p>
+		<a class="sim-btn sim-btn_success" id="showIOSActionSheet">IOS</a>
+	</p>
+	
+	<p>
+		<a class="sim-btn sim-btn_success" id="showAndroidActionSheet">Android</a>
+	</p>
+	
+	<div>
+        <div class="sim-mask" id="iosMask" style="display: none;"></div>
+        <div class="sim-actionsheet" id="iosActionsheet">
+            <div class="sim-actionsheet_title">
+                <p>这是一个标题，可以为一行或者两行。</p>
+            </div>
+            <div class="sim-actionsheet_menu">
+                <div class="sim-actionsheet_cell">示例菜单</div>
+                <div class="sim-actionsheet_cell">示例菜单</div>
+                <div class="sim-actionsheet_cell">示例菜单</div>
+                <div class="sim-actionsheet_cell">示例菜单</div>
+            </div>
+            <div class="sim-actionsheet_action">
+                <div class="sim-actionsheet_cell" id="iosActionsheetCancel">取消</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sim-skin_android" id="androidActionsheet" style="display: none">
+        <div class="sim-mask"></div>
+        <div class="sim-actionsheet">
+            <div class="sim-actionsheet_menu">
+                <div class="sim-actionsheet_cell">示例菜单</div>
+                <div class="sim-actionsheet_cell">示例菜单</div>
+                <div class="sim-actionsheet_cell">示例菜单</div>
+            </div>
+        </div>
+    </div>
+	
+
+<script src="../lib/jquery.min.js"></script>
+<script>
+
+// ios
+$(function(){
+    var $iosActionsheet = $('#iosActionsheet');
+    var $iosMask = $('#iosMask');
+
+    function hideActionSheet() {
+        $iosActionsheet.removeClass('sim-actionsheet_toggle');
+        $iosMask.fadeOut(200);
+    }
+
+    $iosMask.on('click', hideActionSheet);
+    $('#iosActionsheetCancel').on('click', hideActionSheet);
+    $("#showIOSActionSheet").on("click", function(){
+        $iosActionsheet.addClass('sim-actionsheet_toggle');
+        $iosMask.fadeIn(200);
+    });
+});
+
+// android
+$(function(){
+    var $androidActionSheet = $('#androidActionsheet');
+    var $androidMask = $androidActionSheet.find('.sim-mask');
+
+    $("#showAndroidActionSheet").on('click', function(){
+        $androidActionSheet.fadeIn(200);
+        $androidMask.on('click',function () {
+            $androidActionSheet.fadeOut(200);
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+

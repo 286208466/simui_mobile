@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' />
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="../dist/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../dist/sim_mobile.css"/>
+<link rel="stylesheet" type="text/css" href="./example.css"/>
+<style>
+body > p {
+	margin: 10px;
+}
+</style>
+</head>
+<body class="example">
+
+	<div id="statusbar">
+		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
+	</div>
+	<div id="header">
+		<p>表单输入 Input</p>
+	</div>
+	
+	<br>
+	<div class="sim-cells_title">单选列表项</div>
+	<div class="sim-cells sim-cells_radio">
+        <label class="sim-cell sim-check_label" for="x11">
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">
+                <input type="radio" class="sim-check" name="radio1" id="x11">
+                <span class="sim-icon-checked"></span>
+            </div>
+        </label>
+        <label class="sim-cell sim-check_label" for="x12">
+
+            <div class="sim-cell_bd">
+                <p>cell standard</p>
+            </div>
+            <div class="sim-cell_ft">
+                <input type="radio" name="radio1" class="sim-check" id="x12" checked="checked">
+                <span class="sim-icon-checked"></span>
+            </div>
+        </label>
+        <a href="javascript:void(0);" class="sim-cell sim-cell_link">
+            <div class="sim-cell_bd">添加更多</div>
+        </a>
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">复选列表项</div>
+    <div class="sim-cells sim-cells_checkbox">
+        <label class="sim-cell sim-check_label" for="s11">
+            <div class="sim-cell_hd">
+                <input type="checkbox" class="sim-check" name="checkbox1" id="s11" checked="checked">
+                <i class="sim-icon-checked"></i>
+            </div>
+            <div class="sim-cell_bd">
+                <p>standard is dealt for u.</p>
+            </div>
+        </label>
+        <label class="sim-cell sim-check_label" for="s12">
+            <div class="sim-cell_hd">
+                <input type="checkbox" name="checkbox1" class="sim-check" id="s12">
+                <i class="sim-icon-checked"></i>
+            </div>
+            <div class="sim-cell_bd">
+                <p>standard is dealicient for u.</p>
+            </div>
+        </label>
+        <a href="javascript:void(0);" class="sim-cell sim-cell_link">
+            <div class="sim-cell_bd">添加更多</div>
+        </a>
+    </div>
+	
+	<br>
+    <div class="sim-cells_title">表单</div>
+    <div class="sim-cells">
+        <div class="sim-cell">
+            <div class="sim-cell_hd"><label class="sim-label">qq</label></div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="number" pattern="[0-9]*" placeholder="请输入qq号">
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_hd">
+                <label class="sim-label">手机号</label>
+            </div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="tel" placeholder="请输入手机号">
+            </div>
+            <div class="sim-cell_ft">
+                <button class="sim-vcode-btn">获取验证码</button>
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_hd"><label for="" class="sim-label">日期</label></div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="date" value="">
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_hd"><label for="" class="sim-label">时间</label></div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="datetime-local" value="" placeholder="">
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_hd"><label class="sim-label">验证码</label></div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="number" placeholder="请输入验证码">
+            </div>
+            <div class="sim-cell_ft">
+                <img src="/simui_mobile/jquery/lib/img/vcode.jpg" height="30">
+            </div>
+        </div>
+    </div>
+    
+    <br>
+	<div class="sim-cells_title">表单报错</div>
+	<div class="sim-cells">
+        <div class="sim-cell sim-cell_error">
+            <div class="sim-cell_hd"><label for="" class="sim-label">卡号</label></div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="number" pattern="[0-9]*" value="sim input error" placeholder="请输入卡号">
+            </div>
+            <div class="sim-cell_ft">
+                <i class="sim-icon_warning"></i>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">开关</div>
+    <div class="sim-cells">
+        <div class="sim-cell sim-cell_switch">
+            <div class="sim-cell_bd">标题文字</div>
+            <div class="sim-cell_ft">
+                <input class="sim-switch" type="checkbox">
+            </div>
+        </div>
+    </div>
+	
+	<br>
+	<div class="sim-cells_title">文本框</div>
+	<div class="sim-cells">
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="text" placeholder="请输入文本">
+            </div>
+        </div>
+    </div>
+    
+    <br>
+	<div class="sim-cells_title">文本框</div>
+	<div class="sim-cells sim-cells_form">
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <textarea class="sim-textarea" placeholder="请输入文本" rows="3"></textarea>
+                <div class="sim-textarea_counter"><span>0</span>/200</div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">选择</div>
+    <div class="sim-cells">
+        <div class="sim-cell">
+            <div class="sim-cell_hd">
+            	<label for="" class="sim-label">
+	                <select class="sim-select" name="select2">
+	                    <option value="1">+86</option>
+	                    <option value="2">+80</option>
+	                    <option value="3">+84</option>
+	                    <option value="4">+87</option>
+	                </select>
+                </label>
+            </div>
+            <div class="sim-cell_bd">
+                <input class="sim-input" type="number" pattern="[0-9]*" placeholder="请输入号码">
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <div class="sim-cells_title">选择</div>
+    <div class="sim-cells">
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+                <select class="sim-select" name="select1">
+                    <option selected="" value="1">微信号</option>
+                    <option value="2">QQ号</option>
+                    <option value="3">Email</option>
+                </select>
+            </div>
+        </div>
+        <div class="sim-cell">
+            <div class="sim-cell_hd">
+                <label for="" class="sim-label">国家/地区</label>
+            </div>
+            <div class="sim-cell_bd">
+                <select class="sim-select" name="select2">
+                    <option value="1">中国</option>
+                    <option value="2">美国</option>
+                    <option value="3">英国</option>
+                </select>
+            </div>
+        </div>
+    </div>
+	
+	<br>
+	<br>
+	
+<script src="../lib/jquery.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
+

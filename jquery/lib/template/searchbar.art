@@ -1,0 +1,10 @@
+<div class="demoWrap fl">
+	<div>
+		<iframe src="/simui_mobile/jquery/example/searchbar.html" frameborder="0"></iframe>
+	</div>
+</div>
+
+<div class="detailWrap">
+	<h2>Searchbar</h2>
+</div>
+

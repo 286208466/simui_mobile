@@ -1,0 +1,10 @@
+<div class="demoWrap fl">
+	<div>
+		<iframe src="/simui_mobile/jquery/example/picker.html" frameborder="0"></iframe>
+	</div>
+</div>
+
+<div class="detailWrap">
+	<h2>Picker</h2>
+</div>
+
