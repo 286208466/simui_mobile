@@ -1,10 +1,56 @@
 <div class="detailWrap">
 	<h2>说明</h2>
+	<h3>注意事项</h3>
 	<div class="tipbox">
 		<p>1、强制依赖jquery</p>
 		<p>2、如果您不喜欢以<code>sim-</code>开头命名的样式，可以自己修改<code>/src/less/components/vars.less</code>中的<code>@pre</code>,然后运行<code>webpack</code>重新编译即可。</p>
 	</div>
 	
-	<h2>层级规范</h2>
+	<h3>层级规范</h3>
+	<p>用于规范页面元素所属层级、层级顺序及组合规范。</p>
+	<style>
+		.index_item{
+			position: absolute;
+    		left: 50%;
+    		width: 180px;
+    		height: 320px;
+    		margin-left: -90px;
+    		-webkit-transition: .5s;
+    		transition: .5s;
+    		font-size: 14px;
+    		color: #fff;
+    		margin-top: 100px;
+		}
+		.index_item span{
+			position: absolute;
+    		bottom: 5px;
+    		left: 0;
+    		right: 0;
+    		text-align: center;
+    		-webkit-transition: .5s;
+    		transition: .5s;
+    		font-size: 16px;
+		}
+	</style>
+	<div>
+		<div style="position: relative;height: 550px">
+            <div class="index_item" style="border: 1px solid hsla(0,0%,80%,.5);z-index: 4;-webkit-transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(120px);transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(120px);">
+            	<span>Popout</span>
+            </div>
+            <div class="index_item" style="background-color: rgba(0,0,0,.5);z-index: 3;-webkit-transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(40px);transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(40px);">
+            	<span>Mask</span>
+            </div>
+            <div class="index_item" style="background-color: rgba(56,184,54,.8);z-index: 2;-webkit-transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(-40px);transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(-40px);">
+            	<span>Navigation</span>
+            </div>
+            <div class="index_item" style="background-color: #499EF3;z-index: 1;-webkit-transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(-120px);transform: translateX(15px) rotateX(45deg) rotate(10deg) skew(-15deg) translateZ(-120px);"> 
+            	<span>Content</span>
+            </div>
+        </div>
+	</div>
+	<p>内容Content： <code>z-index: 1</code></p>
+	<p>导航Navigation： <code>z-index: 2</code></p>
+	<p>遮罩Mask： <code>z-index: 3</code></p>
+	<p>弹出Popout： <code>z-index: 4</code></p>
 </div>
 

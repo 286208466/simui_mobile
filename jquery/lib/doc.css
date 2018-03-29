@@ -174,6 +174,7 @@ body {
     font-size: 14px;
     color: #5e6d82;
     line-height: 1.5em;
+    margin: 10px 0;
 }
 .detailWrap a {
 	color: #409eff;
@@ -219,4 +220,10 @@ body {
 .detailWrap .warningbox code {
 	background-color:hsla(0,0%,100%,.7);
 	color:#445368
+}
+.detailWrap code {
+    background-color: #f9fafc;
+    padding: 0 4px;
+    border: 1px solid #eaeefb;
+    border-radius: 4px;
 }

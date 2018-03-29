@@ -23,7 +23,7 @@
 <span><i><</i>meta name="apple-mobile-web-app-status-bar-style" content="black" /></span>
 <span><i><</i>meta name="format-detection" content="telephone=no" /></span>
 <span><i><</i>meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /></span>
-<span><i><</i>title></title></span>
+<span><i><</i>title><i><</i>/title></span>
 <span><i><</i>link rel="stylesheet" href="sim_mobile.css"></span>
 <span><i><</i>/head></span>
 <span><i><</i>body></span><br>
