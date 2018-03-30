@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
-    font-size: 1em;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -28,7 +28,7 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
-.@{pre}btn_small {
+.@{pre}btn_min {
 	display: inline-block;
     padding: 0 1em;
     line-height: 2;
@@ -36,37 +36,37 @@
 }
 
 .@{pre}btn_default {
-	color: #000000;
-    background-color: #F8F8F8;
+	color: @black;
+    background-color: @bg_default;
 }
 .@{pre}btn_default:not(.@{pre}btn_disabled):visited {
-    color: #000000;
+    color: @black;
 }
 .@{pre}btn_default:not(.@{pre}btn_disabled):active {
     color: rgba(0, 0, 0, 0.6);
-    background-color: #DEDEDE;
+    background-color: @bg_defaultActive;
 }
 
 .@{pre}btn_success {
-	background-color: #1AAD19;
+	background-color: @green;
 }
 .@{pre}btn-btn_success:not(.@{pre}btn-btn_disabled):visited {
-    color: #FFFFFF;
+    color: @white;
 }
 .@{pre}btn-btn_success:not(.@{pre}btn-btn_disabled):active {
     color: rgba(255, 255, 255, 0.6);
-    background-color: #179B16;
+    background-color: @greenActive;
 }
 
-.@{pre}btn_warning {
-	background-color: #E64340;
+.@{pre}btn_error {
+	background-color: @error;
 }
-.@{pre}btn_warning:not(.@{pre}btn_disabled):visited {
-    color: #FFFFFF;
+.@{pre}btn_error:not(.@{pre}btn_disabled):visited {
+    color: @white;
 }
-.@{pre}btn_warning:not(.@{pre}btn_disabled):active {
+.@{pre}btn_error:not(.@{pre}btn_disabled):active {
     color: rgba(255, 255, 255, 0.6);
-    background-color: #CE3C39;
+    background-color: @errorActive;
 }
 
 .@{pre}btn_disabled {
@@ -79,7 +79,7 @@
 .@{pre}btn_disabled.@{pre}btn_success {
     background-color: #9ED99D;
 }
-.@{pre}btn_disabled.@{pre}btn_warning {
+.@{pre}btn_disabled.@{pre}btn_error {
     background-color: #EC8B89;
 }
 
@@ -90,13 +90,13 @@
     margin: -0.2em 0.34em 0 0;
 }
 .@{pre}btn_loading.@{pre}btn_success, 
-.@{pre}btn_loading.@{pre}btn_warning {
+.@{pre}btn_loading.@{pre}btn_error {
     color: rgba(255, 255, 255, 0.6);
 }
 .@{pre}btn_loading.@{pre}btn_success {
     background-color: #179B16;
 }
-.@{pre}btn_loading.@{pre}btn_warning {
+.@{pre}btn_loading.@{pre}btn_error {
     background-color: #CE3C39;
 }
 
@@ -127,13 +127,13 @@
   	border-color: rgba(0, 0, 0, 0.2);
 }
 button.@{pre}btn,
-input.@{pre}btn{
+input.@{pre}btn {
   	width: 100%;
   	border-width: 0;
   	outline: 0;
   	-webkit-appearance: none;
 }
 button.@{pre}btn:focus,
-input.@{pre}btn:focus{
+input.@{pre}btn:focus {
   	outline: 0;
 }

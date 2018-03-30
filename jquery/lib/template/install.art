@@ -7,10 +7,10 @@
 	<p>目前可以通过github获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。</p>
 
 <pre>
-<code class="codebox"><span><i><<i>!-- 引入样式 --></span>
+<code class="codebox"><span><i><</i>!-- 引入样式 --></span>
 <span><i><</i>link rel="stylesheet" href="sim_mobile.css"></span>
-<span><i><<i>!-- 引入组件库 --></span>
-<span><i><</i>script src="sim_mobile.js"></script></span></code>
+<span><i><</i>!-- 引入组件库 --></span>
+<span><i><</i>script src="sim_mobile.js"><i><</i>/script></span></code>
 </pre>
 
 	<h3>完整的页面示例</h3>
@@ -27,7 +27,7 @@
 <span><i><</i>link rel="stylesheet" href="sim_mobile.css"></span>
 <span><i><</i>/head></span>
 <span><i><</i>body></span><br>
-<span><i><</i>script src="sim_mobile.js"></script></span>
+<span><i><</i>script src="sim_mobile.js"><i><</i>/script></span>
 <span><i><</i>/body></span>
 <span><i><</i>/html></span></code>
 </pre>

@@ -36,26 +36,27 @@ body > p {
 	<div class="sim-cells sim-cells_radio">
         <label class="sim-cell sim-check_label" for="x11">
             <div class="sim-cell_bd">
-                <p>cell standard</p>
+                <p>微信</p>
             </div>
             <div class="sim-cell_ft">
                 <input type="radio" class="sim-check" name="radio1" id="x11">
-                <span class="sim-icon-checked"></span>
+                <span class="sim-icon_checked"></span>
             </div>
         </label>
         <label class="sim-cell sim-check_label" for="x12">
-
             <div class="sim-cell_bd">
-                <p>cell standard</p>
+                <p>支付宝</p>
             </div>
             <div class="sim-cell_ft">
                 <input type="radio" name="radio1" class="sim-check" id="x12" checked="checked">
-                <span class="sim-icon-checked"></span>
+                <span class="sim-icon_checked"></span>
             </div>
         </label>
-        <a href="javascript:void(0);" class="sim-cell sim-cell_link">
-            <div class="sim-cell_bd">添加更多</div>
-        </a>
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+            	<a>添加更多</a>
+            </div>
+        </div>
     </div>
     
     <br>
@@ -64,24 +65,26 @@ body > p {
         <label class="sim-cell sim-check_label" for="s11">
             <div class="sim-cell_hd">
                 <input type="checkbox" class="sim-check" name="checkbox1" id="s11" checked="checked">
-                <i class="sim-icon-checked"></i>
+                <i class="sim-icon_checked"></i>
             </div>
             <div class="sim-cell_bd">
-                <p>standard is dealt for u.</p>
+                <p>篮球</p>
             </div>
         </label>
         <label class="sim-cell sim-check_label" for="s12">
             <div class="sim-cell_hd">
                 <input type="checkbox" name="checkbox1" class="sim-check" id="s12">
-                <i class="sim-icon-checked"></i>
+                <i class="sim-icon_checked"></i>
             </div>
             <div class="sim-cell_bd">
-                <p>standard is dealicient for u.</p>
+                <p>足球</p>
             </div>
         </label>
-        <a href="javascript:void(0);" class="sim-cell sim-cell_link">
-            <div class="sim-cell_bd">添加更多</div>
-        </a>
+        <div class="sim-cell">
+            <div class="sim-cell_bd">
+            	<a>添加更多</a>
+            </div>
+        </div>
     </div>
 	
 	<br>
@@ -133,7 +136,7 @@ body > p {
         <div class="sim-cell sim-cell_error">
             <div class="sim-cell_hd"><label for="" class="sim-label">卡号</label></div>
             <div class="sim-cell_bd">
-                <input class="sim-input" type="number" pattern="[0-9]*" value="sim input error" placeholder="请输入卡号">
+                <input class="sim-input" type="number" placeholder="请输入卡号">
             </div>
             <div class="sim-cell_ft">
                 <i class="sim-icon_warning"></i>
@@ -164,7 +167,7 @@ body > p {
     
     <br>
 	<div class="sim-cells_title">文本框</div>
-	<div class="sim-cells sim-cells_form">
+	<div class="sim-cells">
         <div class="sim-cell">
             <div class="sim-cell_bd">
                 <textarea class="sim-textarea" placeholder="请输入文本" rows="3"></textarea>

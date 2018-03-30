@@ -6,5 +6,45 @@
 
 <div class="detailWrap">
 	<h2>按钮 Button</h2>
+	<h3>主操作按钮</h3>
+	
+<pre>
+<code class="codebox"><span><i><</i>a class="sim-btn sim-btn_success">页面主操作 Normal<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_success sim-btn_loading"><i><</i>i class="sim-loading"><i><</i>/i>页面主操作 Loading<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_success sim-btn_disabled">页面主操作 Disabled<i><</i>/a></span></code></pre>	
+
+	<h3>次要操作按钮</h3>
+
+<pre>
+<code class="codebox"><span><i><</i>a class="sim-btn sim-btn_default">页面次要操作 Normal<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_default sim-btn_loading"><i><</i>i class="sim-loading"><i><</i>/i>页面次操作 Loading<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_default sim-btn_disabled">页面次要操作 Disabled<i><</i>/a></span></code>
+</pre>	
+
+	<h3>警告类操作按钮</h3>
+	
+<pre>
+<code class="codebox"><span><i><</i>a class="sim-btn sim-btn_error">警告类操作 Normal<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_error sim-btn_loading"><i><</i>i class="sim-loading"><i><</i>/i>警告类操作 Loading<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_error sim-btn_disabled">警告类操作 Disabled<i><</i>/a></span></code>
+</pre>	
+
+	<h3>线性按钮</h3>
+	
+<pre>
+<code class="codebox"><span><i><</i>a class="sim-btn sim-btn_plain_success">按钮<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_plain_success sim-btn_plain_disabled">按钮<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_plain_default">按钮<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_plain_default sim-btn_plain_disabled">按钮<i><</i>/a></span></code>
+</pre>
+
+	<h3>小按钮</h3>
+	
+<pre>
+<code class="codebox"><span><i><</i>a class="sim-btn sim-btn_min sim-btn_default">按钮<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_min sim-btn_success">按钮<i><</i>/a></span>
+<span><i><</i>a class="sim-btn sim-btn_min sim-btn_error">按钮<i><</i>/a></span></code>
+</pre>	
+
 </div>
 

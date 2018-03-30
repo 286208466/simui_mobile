@@ -6,4 +6,58 @@
 
 <div class="detailWrap">
 	<h2>表单输入 Input</h2>
+	
+	<h3>单选列表项</h3>
+<pre>
+<code class="codebox"><span><i><</i>div class="sim-cells sim-cells_radio"></span>
+<span>    <i><</i>label class="sim-cell sim-check_label" for="x11"></span>
+<span>        <i><</i>div class="sim-cell_bd"></span>
+<span>            <i><</i>p>微信<i><</i>/p></span>
+<span>        <i><</i>/div></span>
+<span>        <i><</i>div class="sim-cell_ft"></span>
+<span>            <i><</i>input type="radio" class="sim-check" name="radio1" id="x11"></span>
+<span>            <i><</i>span class="sim-icon_checked"><i><</i>/span></span>
+<span>        <i><</i>/div></span>
+<span>    <i><</i>/label></span>
+<span>    <i><</i>label class="sim-cell sim-check_label" for="x12"></span>
+<span>        <i><</i>div class="sim-cell_bd"></span>
+<span>            <i><</i>p>支付宝<i><</i>/p></span>
+<span>        <i><</i>/div></span>
+<span>        <i><</i>div class="sim-cell_ft"></span>
+<span>            <i><</i>input type="radio" name="radio1" class="sim-check" id="x12" checked="checked"></span>
+<span>            <i><</i>span class="sim-icon_checked"><i><</i>/span></span>
+<span>        <i><</i>/div></span>
+<span>    <i><</i>/label></span>
+<span>    <i><</i>div class="sim-cell"></span>
+<span>        <i><</i>div class="sim-cell_bd"></span>
+<span>            <i><</i>a>添加更多<i><</i>/a></span>
+<span>        <i><</i>/div></span>
+<span>    <i><</i>/div></span>
+<span><i><</i>/div></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre>
+<code class="codebox"><span></span>	
+<span></span></code></pre>		
+	
 </div>
