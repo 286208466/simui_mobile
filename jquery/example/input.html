@@ -91,7 +91,9 @@ body > p {
     <div class="sim-cells_title">表单</div>
     <div class="sim-cells">
         <div class="sim-cell">
-            <div class="sim-cell_hd"><label class="sim-label">qq</label></div>
+            <div class="sim-cell_hd">
+            	<label class="sim-label">qq</label>
+            </div>
             <div class="sim-cell_bd">
                 <input class="sim-input" type="number" pattern="[0-9]*" placeholder="请输入qq号">
             </div>
@@ -108,19 +110,25 @@ body > p {
             </div>
         </div>
         <div class="sim-cell">
-            <div class="sim-cell_hd"><label for="" class="sim-label">日期</label></div>
+            <div class="sim-cell_hd">
+            	<label class="sim-label">日期</label>
+            </div>
             <div class="sim-cell_bd">
-                <input class="sim-input" type="date" value="">
+                <input class="sim-input" type="date">
             </div>
         </div>
         <div class="sim-cell">
-            <div class="sim-cell_hd"><label for="" class="sim-label">时间</label></div>
+            <div class="sim-cell_hd">
+            	<label class="sim-label">时间</label>
+            </div>
             <div class="sim-cell_bd">
-                <input class="sim-input" type="datetime-local" value="" placeholder="">
+                <input class="sim-input" type="datetime-local">
             </div>
         </div>
         <div class="sim-cell">
-            <div class="sim-cell_hd"><label class="sim-label">验证码</label></div>
+            <div class="sim-cell_hd">
+            	<label class="sim-label">验证码</label>
+            </div>
             <div class="sim-cell_bd">
                 <input class="sim-input" type="number" placeholder="请输入验证码">
             </div>
@@ -134,7 +142,9 @@ body > p {
 	<div class="sim-cells_title">表单报错</div>
 	<div class="sim-cells">
         <div class="sim-cell sim-cell_error">
-            <div class="sim-cell_hd"><label for="" class="sim-label">卡号</label></div>
+            <div class="sim-cell_hd">
+            	<label class="sim-label">卡号</label>
+            </div>
             <div class="sim-cell_bd">
                 <input class="sim-input" type="number" placeholder="请输入卡号">
             </div>
@@ -156,7 +166,7 @@ body > p {
     </div>
 	
 	<br>
-	<div class="sim-cells_title">文本框</div>
+	<div class="sim-cells_title">单行文本框</div>
 	<div class="sim-cells">
         <div class="sim-cell">
             <div class="sim-cell_bd">
@@ -166,12 +176,14 @@ body > p {
     </div>
     
     <br>
-	<div class="sim-cells_title">文本框</div>
+	<div class="sim-cells_title">多行文本框</div>
 	<div class="sim-cells">
         <div class="sim-cell">
             <div class="sim-cell_bd">
                 <textarea class="sim-textarea" placeholder="请输入文本" rows="3"></textarea>
-                <div class="sim-textarea_counter"><span>0</span>/200</div>
+                <div class="sim-textarea_counter">
+                	<span>0</span>/200
+                </div>
             </div>
         </div>
     </div>
@@ -181,7 +193,7 @@ body > p {
     <div class="sim-cells">
         <div class="sim-cell">
             <div class="sim-cell_hd">
-            	<label for="" class="sim-label">
+            	<label class="sim-label">
 	                <select class="sim-select" name="select2">
 	                    <option value="1">+86</option>
 	                    <option value="2">+80</option>
@@ -194,11 +206,6 @@ body > p {
                 <input class="sim-input" type="number" pattern="[0-9]*" placeholder="请输入号码">
             </div>
         </div>
-    </div>
-    
-    <br>
-    <div class="sim-cells_title">选择</div>
-    <div class="sim-cells">
         <div class="sim-cell">
             <div class="sim-cell_bd">
                 <select class="sim-select" name="select1">
@@ -221,6 +228,7 @@ body > p {
             </div>
         </div>
     </div>
+    
 	
 	<br>
 	<br>

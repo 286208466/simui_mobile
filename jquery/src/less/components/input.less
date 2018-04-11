@@ -62,8 +62,8 @@
   	background-color: transparent;
   	font-size: inherit;
   	color: inherit;
-  	height: 1.47058824em;
-  	line-height: 1.47058824;
+  	height: 20px;
+  	line-height: 20px;
 }
 .@{pre}input::-webkit-outer-spin-button,
 .@{pre}input::-webkit-inner-spin-button{
@@ -76,7 +76,7 @@
   	resize: none;
   	width: 100%;
   	color: inherit;
- 	font-size: 1em;
+ 	font-size: 14px;
   	line-height: inherit;
   	outline: 0;
 }
@@ -126,76 +126,75 @@
           	appearance: none;
 }
 .@{pre}switch {
-  position:relative;
-  width:52px;
-  height:26px;
-  border:1px solid #DFDFDF;
-  outline:0;
-  border-radius:16px;
-  box-sizing:border-box;
-  background-color:#DFDFDF;
-  -webkit-transition:background-color 0.1s, border 0.1s;
-  transition:background-color 0.1s, border 0.1s;
+  	position: relative;
+  	width: 52px;
+  	height: 26px;
+  	border: 1px solid #DFDFDF;
+  	outline: 0;
+  	border-radius: 16px;
+  	box-sizing: border-box;
+  	background-color: #DFDFDF;
+  	-webkit-transition: background-color 0.1s, border 0.1s;
+  	transition: background-color 0.1s, border 0.1s;
 }
 .@{pre}switch:before {
-  content:" ";
-  position:absolute;
-  top:0;
-  left:0;
-  width:50px;
-  height:24px;
-  border-radius:15px;
-  background-color:#FDFDFD;
-  -webkit-transition:-webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-  transition:-webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-  transition:transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-  transition:transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+  	content: " ";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+ 	width: 50px;
+  	height: 24px;
+  	border-radius: 15px;
+  	background-color: #FDFDFD;
+  	-webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+  	transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+  	transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+  	transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
 }
 .@{pre}switch:after {
-  content:" ";
-  position:absolute;
-  top:0;
-  left:0;
-  width:30px;
-  height:24px;
-  border-radius:15px;
-  background-color:#FFFFFF;
-  box-shadow:0 1px 3px rgba(0, 0, 0, 0.4);
-  -webkit-transition:-webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-  transition:-webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-  transition:transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-  transition:transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+  	content: " ";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 30px;
+  	height: 24px;
+  	border-radius: 15px;
+  	background-color: #FFFFFF;
+  	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  	-webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+  	transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+  	transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+  	transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
 }
 .@{pre}switch:checked {
-  border-color:#1AAD19;
-  background-color:#1AAD19;
+  	border-color: #1AAD19;
+  	background-color: #1AAD19;
 }
 .@{pre}switch:checked:before {
-  -webkit-transform:scale(0);
-          transform:scale(0);
+  	-webkit-transform: scale(0);
+	transform: scale(0);
 }
 .@{pre}switch:checked:after {
-  -webkit-transform:translateX(20px);
-          transform:translateX(20px);
+  	-webkit-transform: translateX(20px);
+	transform: translateX(20px);
 }
 /*
 	下拉选择
 */
-.@{pre}select{
-  	-webkit-appearance:none;
-  	border:0;
-  	outline:0;
-  	background-color:transparent;
-  	width:100%;
-  	font-size:inherit;
-  	height:30px;
-  	line-height:30px;
-  	position:relative;
- 	z-index:1;
+.@{pre}select {
+  	-webkit-appearance: none;
+  	border: 0;
+  	outline: 0;
+  	background-color: transparent;
+  	width: 100%;
+  	font-size: inherit;
+  	height: 30px;
+  	line-height: 30px;
+  	position: relative;
 }
 
 .@{pre}cells input,
 .@{pre}cells textarea,
-.@{pre}cells label[for]{
+.@{pre}cells label[for] {
   	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

@@ -22,7 +22,7 @@ body > p {
 }
 </style>
 </head>
-<body class="example" ontouchstart>
+<body class="example">
 
 	<div id="statusbar">
 		<img src="/simui_mobile/jquery/lib/img/statusbar.png" width="100%">
@@ -32,53 +32,32 @@ body > p {
 	</div>
 	
 	<br>
-	<div class="sim-slider">
-        <div class="sim-slider_inner">
-            <div style="width: 0;" class="sim-slider_track"></div>
-            <div style="left: 0;" class="sim-slider_handler"></div>
-        </div>
-    </div>
+	<div style="padding: 20px">
 	
-	<div class="sim-sliderbox">
-        <div class="sim-slider">
-            <div id="sliderInner" class="sim-slider_inner">
-                <div id="sliderTrack" style="width: 58%;" class="sim-slider_track"></div>
-                <div id="sliderHandler" style="left: 58%;" class="sim-slider_handler"></div>
-            </div>
-        </div>
-        <div id="sliderValue" class="sim-slider-box_value">58</div>
-    </div>
+		<div class="sim-slider">
+	        <div class="sim-slider_inner">
+	        	<div class="qqq"></div>
+	            <div style="width: 0;" class="sim-slider_track"></div>
+	            <div style="left: 0;" class="sim-slider_handler"></div>
+	        </div>
+	    </div>
+		
+		<div class="sim-sliderbox">
+	        <div class="sim-slider">
+	            <div id="sliderInner" class="sim-slider_inner">
+	                <div id="sliderTrack" style="width: 58%;" class="sim-slider_track"></div>
+	                <div id="sliderHandler" style="left: 58%;" class="sim-slider_handler"></div>
+	            </div>
+	        </div>
+	        <div class="sim-slider_value">58</div>
+	    </div>
+	
+	</div>
 
-<script src="../lib/zepto.min.js"></script>
+<script src="../lib/jquery.min.js"></script>
+<script src="../dist/sim_mobile.js"></script>
 <script>
 
-$(function(){
-    var $sliderTrack = $('#sliderTrack'),
-        $sliderHandler = $('#sliderHandler'),
-        $sliderValue = $('#sliderValue');
-
-    var totalLen = $('#sliderInner').width(),
-        startLeft = 0,
-        startX = 0;
-
-    $sliderHandler
-        .on('touchstart', function (e) {
-            startLeft = parseInt($sliderHandler.css('left')) * totalLen / 100;
-            startX = e.changedTouches[0].clientX;
-        })
-        .on('touchmove', function(e){
-            var dist = startLeft + e.changedTouches[0].clientX - startX,
-                percent;
-            dist = dist < 0 ? 0 : dist > totalLen ? totalLen : dist;
-            percent =  parseInt(dist / totalLen * 100);
-            $sliderTrack.css('width', percent + '%');
-            $sliderHandler.css('left', percent + '%');
-            $sliderValue.text(percent);
-
-            e.preventDefault();
-        })
-    ;
-});
 </script>
 </body>
 </html>

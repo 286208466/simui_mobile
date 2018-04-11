@@ -6,4 +6,24 @@
 
 <div class="detailWrap">
 	<h2>滑块 Slider</h2>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-slider"></span>	
+<span>    &lt;div class="sim-slider_inner"></span>
+<span>        &lt;div style="width: 0;" class="sim-slider_track">&lt;/div></span>
+<span>        &lt;div style="left: 0;" class="sim-slider_handler">&lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-sliderbox"></span>	
+<span>    &lt;div class="sim-slider"></span>
+<span>        &lt;div class="sim-slider_inner"></span>
+<span>            &lt;div style="width: 58%;" class="sim-slider_track">&lt;/div></span>
+<span>            &lt;div style="left: 58%;" class="sim-slider_handler">&lt;/div></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-slider_value">58&lt;/div></span>
+<span>&lt;/div></span></code></pre>	
+	
 </div>

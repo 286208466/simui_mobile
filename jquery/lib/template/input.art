@@ -9,55 +9,207 @@
 	
 	<h3>单选列表项</h3>
 <pre>
-<code class="codebox"><span><i><</i>div class="sim-cells sim-cells_radio"></span>
-<span>    <i><</i>label class="sim-cell sim-check_label" for="x11"></span>
-<span>        <i><</i>div class="sim-cell_bd"></span>
-<span>            <i><</i>p>微信<i><</i>/p></span>
-<span>        <i><</i>/div></span>
-<span>        <i><</i>div class="sim-cell_ft"></span>
-<span>            <i><</i>input type="radio" class="sim-check" name="radio1" id="x11"></span>
-<span>            <i><</i>span class="sim-icon_checked"><i><</i>/span></span>
-<span>        <i><</i>/div></span>
-<span>    <i><</i>/label></span>
-<span>    <i><</i>label class="sim-cell sim-check_label" for="x12"></span>
-<span>        <i><</i>div class="sim-cell_bd"></span>
-<span>            <i><</i>p>支付宝<i><</i>/p></span>
-<span>        <i><</i>/div></span>
-<span>        <i><</i>div class="sim-cell_ft"></span>
-<span>            <i><</i>input type="radio" name="radio1" class="sim-check" id="x12" checked="checked"></span>
-<span>            <i><</i>span class="sim-icon_checked"><i><</i>/span></span>
-<span>        <i><</i>/div></span>
-<span>    <i><</i>/label></span>
-<span>    <i><</i>div class="sim-cell"></span>
-<span>        <i><</i>div class="sim-cell_bd"></span>
-<span>            <i><</i>a>添加更多<i><</i>/a></span>
-<span>        <i><</i>/div></span>
-<span>    <i><</i>/div></span>
-<span><i><</i>/div></span></code></pre>
+<code class="codebox"><span>&lt;div class="sim-cells sim-cells_radio"></span>
+<span>    &lt;label class="sim-cell sim-check_label" for="x11"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>微信&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;input type="radio" class="sim-check" name="radio1" id="x11"></span>
+<span>            &lt;span class="sim-icon_checked">&lt;/span></span>
+<span>        &lt;/div></span>
+<span>    &lt;/label></span>
+<span>    &lt;label class="sim-cell sim-check_label" for="x12"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>支付宝&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;input type="radio" name="radio1" class="sim-check" id="x12" checked="checked"></span>
+<span>            &lt;span class="sim-icon_checked">&lt;/span></span>
+<span>        &lt;/div></span>
+<span>    &lt;/label></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;a>添加更多&lt;/a></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<h3>复选列表项</h3>
 
 <pre>
-<code class="codebox"><span></span>	
-<span></span></code></pre>		
+<code class="codebox"><span>&lt;div class="sim-cells sim-cells_checkbox"></span>
+<span>    &lt;label class="sim-cell sim-check_label" for="s11"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;input type="checkbox" class="sim-check" name="checkbox1" id="s11" checked="checked"></span>
+<span>            &lt;i class="sim-icon_checked">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>篮球&lt;/p></span>
+<span>        &lt;/div></span>
+<span>    &lt;/label></span>
+<span>    &lt;label class="sim-cell sim-check_label" for="s12"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;input type="checkbox" name="checkbox1" class="sim-check" id="s12"></span>
+<span>            &lt;i class="sim-icon_checked">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>足球&lt;/p></span>
+<span>        &lt;/div></span>
+<span>    &lt;/label></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;a>添加更多&lt;/a></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>	
+
+	<h3>表单</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label">qq&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="number" pattern="[0-9]*" placeholder="请输入qq号"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label">手机号&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="tel" placeholder="请输入手机号"></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;button class="sim-vcode-btn">获取验证码&lt;/button></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label">日期&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="date"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label">时间&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="datetime-local"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label">验证码&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="number" placeholder="请输入验证码"></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;img src="/simui_mobile/jquery/lib/img/vcode.jpg" height="30"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>	
+<span>&lt;/div></span></code></pre>
+
+	<h3>表单报错</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell sim-cell_error"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label">卡号&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>	
+<span>            &lt;input class="sim-input" type="number" placeholder="请输入卡号"></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;i class="sim-icon_warning">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>
+
+	<h3>开关</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell sim-cell_switch"></span>
+<span>        &lt;div class="sim-cell_bd">标题文字&lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;input class="sim-switch" type="checkbox"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>		
+
+	<h3>单行文本框</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="text" placeholder="请输入文本"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>	
+<span>&lt;/div></span></code></pre>
+
+	<h3>多行文本框</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;textarea class="sim-textarea" placeholder="请输入文本" rows="3">&lt;/textarea></span>
+<span>            &lt;div class="sim-textarea_counter"></span>
+<span>                &lt;span>0&lt;/span>/200</span>
+<span>            &lt;/div></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>
+
+	<h3>选择</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label class="sim-label"></span>
+<span>                &lt;select class="sim-select" name="select2"></span>
+<span>                    &lt;option value="1">+86&lt;/option></span>
+<span>                    &lt;option value="2">+80&lt;/option></span>
+<span>                    &lt;option value="3">+84&lt;/option></span>
+<span>                    &lt;option value="4">+87&lt;/option></span>
+<span>                &lt;/select></span>
+<span>            &lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;input class="sim-input" type="number" pattern="[0-9]*" placeholder="请输入号码"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;select class="sim-select" name="select1"></span>
+<span>                &lt;option selected="" value="1">微信号&lt;/option></span>
+<span>                &lt;option value="2">QQ号&lt;/option></span>
+<span>                &lt;option value="3">Email&lt;/option></span>
+<span>            &lt;/select></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;label for="" class="sim-label">国家/地区&lt;/label></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;select class="sim-select" name="select2"></span>
+<span>                &lt;option value="1">中国&lt;/option></span>
+<span>                &lt;option value="2">美国&lt;/option></span>
+<span>                &lt;option value="3">英国&lt;/option></span>
+<span>            &lt;/select></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>	
+<span>&lt;/div></span></code></pre>		
 	
 </div>

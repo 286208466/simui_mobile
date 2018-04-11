@@ -13,7 +13,7 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
 	entry: {
 		'dist/sim_mobile': './src/js/sim_mobile.js'
-		,'dist/sim_mobile': ['./src/less/sim_mobile.less']
+		//,'dist/sim_mobile': ['./src/less/sim_mobile.less']
 		,'lib/template': './lib/template/template.js'
 	}
 	,output: {

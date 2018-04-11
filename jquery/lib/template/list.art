@@ -6,4 +6,114 @@
 
 <div class="detailWrap">
 	<h2>列表 List</h2>
+	
+	<h3>带说明的列表项</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>标题文字&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell sim-cell_swiped"></span>
+<span>        &lt;div class="sim-cell_bd" style="transform: translateX(-68px)"></span>
+<span>            &lt;div class="sim-cell"></span>
+<span>                &lt;div class="sim-cell_bd"></span>
+<span>                    &lt;p>标题文字&lt;/p></span>
+<span>                &lt;/div></span>
+<span>                &lt;div class="sim-cell_ft">说明文字&lt;/div></span>	
+<span>            &lt;/div></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;a class="sim-swiped_btn sim-swiped_btn_error">删除&lt;/a></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>
+
+	<h3>带图标、说明的列表项</h3>
+
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>	
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;i class="icon">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>标题文字&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;i class="icon">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>标题文字&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>	
+
+	<h3>带跳转的列表项</h3>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>	
+<span>    &lt;a class="sim-cell sim-cell_access"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>我的订单&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">&lt;/div></span>
+<span>    &lt;/a></span>
+<span>    &lt;a class="sim-cell sim-cell_access"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>我的收藏&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">&lt;/div></span>
+<span>    &lt;/a></span>
+<span>&lt;/div></span></code></pre>
+
+	<h3>带说明、跳转的列表项</h3>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>	
+<span>    &lt;a class="sim-cell sim-cell_access"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>列表&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/a></span>
+<span>    &lt;a class="sim-cell sim-cell_access"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>列表&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/a></span>
+<span>&lt;/div></span></code></pre>
+
+	<h3>带图标、说明、跳转的列表项</h3>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>	
+<span>    &lt;a class="sim-cell sim-cell_access"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;i class="icon">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>列表&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/a></span>
+<span>    &lt;a class="sim-cell sim-cell_access"></span>
+<span>        &lt;div class="sim-cell_hd"></span>
+<span>            &lt;i class="icon">&lt;/i></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;p>列表&lt;/p></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft">说明文字&lt;/div></span>
+<span>    &lt;/a></span>
+<span>&lt;/div></span></code></pre>		
+	
 </div>
