@@ -167,6 +167,15 @@
     	}
     }
     
+    //原生解绑事件
+    Utils.prototype.unbind = function(el, eventName, fn){
+    	if(window.detachEvent){ 
+    		el.detachEvent("on" + eventName, fn); 
+    	}else{  
+    		el.removeEventListener(eventName, fn, false); 
+    	}
+    }
+    
     //对象OBJECT操作
     Utils.prototype.extend = function(obj){
     	var length = arguments.length;
