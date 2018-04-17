@@ -6,4 +6,11 @@
 
 <div class="detailWrap">
 	<h2>加载更多 Loadmore</h2>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-loadmore"></span>
+<span>    &lt;i class="sim-loading">&lt;/i></span>
+<span>    &lt;span class="sim-loadmore_tip">正在加载&lt;/span></span>
+<span>&lt;/div></span></code></pre>
+
 </div>

@@ -7,8 +7,8 @@ window.slider_startLeft = 0;
 window.slider_startX = 0;
 for(var i = 0; i < handler.length; i++){
 	
-	var el = handler[i];
 	if(utils.isPc()){
+		var el = handler[i];
 		utils.bind(el, "mousedown", function(e1){
 			
 			var e1 = e1 || window.event;

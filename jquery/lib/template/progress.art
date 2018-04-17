@@ -6,5 +6,33 @@
 
 <div class="detailWrap">
 	<h2>进度条 Progress</h2>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-progress"></span>
+<span>    &lt;div class="sim-progressbar"></span>
+<span>        &lt;div class="sim-progress_inner" style="width: 0%;">&lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;a class="sim-progress_op"></span>
+<span>        &lt;i class="sim-icon_cancel">&lt;/i></span>
+<span>    &lt;/a></span>
+<span>&lt;/div></span>
+<span>&lt;div class="sim-progress"></span>
+<span>    &lt;div class="sim-progressbar"></span>
+<span>        &lt;div class="sim-progress_inner" style="width: 50%;">&lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;a class="sim-progress_op"></span>
+<span>        &lt;i class="sim-icon_cancel">&lt;/i></span>
+<span>    &lt;/a></span>
+<span>&lt;/div></span>
+<span>&lt;div class="sim-progress"></span>
+<span>    &lt;div class="sim-progressbar"></span>
+<span>        &lt;div class="sim-progress_inner" style="width: 80%;">&lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;a class="sim-progress_op"></span>
+<span>        &lt;i class="sim-icon_cancel">&lt;/i></span>
+<span>    &lt;/a></span>
+<span>&lt;/div></span></code></pre>	
+	
+	
 </div>
 

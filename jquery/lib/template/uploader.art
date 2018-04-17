@@ -6,5 +6,36 @@
 
 <div class="detailWrap">
 	<h2>上传 Uploader</h2>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;div class="sim-flex"></span>
+<span>                &lt;div class="sim-flex_item">图片上传&lt;/div></span>
+<span>                &lt;div>0/2&lt;/div></span>
+<span>            &lt;/div></span>
+<span>            &lt;div class="sim-uploader_files"></span>
+<span>                &lt;ul></span>
+<span>                    &lt;li class="sim-uploader_file">&lt;/li></span>
+<span>                    &lt;li class="sim-uploader_file">&lt;/li></span>
+<span>                    &lt;li class="sim-uploader_file">&lt;/li></span>
+<span>                    &lt;li class="sim-uploader_file"></span>
+<span>                        &lt;div class="sim-uploader_tip"></span>
+<span>                            &lt;i class="sim-icon_warning">&lt;/i></span>
+<span>                        &lt;/div></span>
+<span>                    &lt;/li></span>
+<span>                    &lt;li class="sim-uploader_file"></span>
+<span>                        &lt;div class="sim-uploader_tip">50%&lt;/div></span>
+<span>                    &lt;/li></span>
+<span>                &lt;/ul></span>
+<span>                &lt;div class="sim-uploader"></span>
+<span>                    &lt;input type="file" accept="image/*" multiple=""></span>
+<span>                &lt;/div></span>
+<span>            &lt;/div></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>	
+	
 </div>
 

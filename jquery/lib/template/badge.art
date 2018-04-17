@@ -6,5 +6,32 @@
 
 <div class="detailWrap">
 	<h2>气泡 Badge</h2>
+	
+<pre>
+<code class="codebox"><span>&lt;div class="sim-cells"></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd">单行列表&lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>            &lt;span class="sim-badge sim-badge_dot">&lt;/span></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;span>单行列表&lt;/span></span>
+<span>            &lt;span class="sim-badge">8&lt;/span></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>    &lt;div class="sim-cell"></span>
+<span>        &lt;div class="sim-cell_bd"></span>
+<span>            &lt;span>单行列表&lt;/span></span>
+<span>            &lt;span class="sim-badge">new&lt;/span></span>
+<span>        &lt;/div></span>
+<span>        &lt;div class="sim-cell_ft"></span>
+<span>        &lt;/div></span>
+<span>    &lt;/div></span>
+<span>&lt;/div></span></code></pre>	
+
 </div>
 
